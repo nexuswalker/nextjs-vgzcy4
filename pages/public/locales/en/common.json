@@ -1,0 +1,8 @@
+{
+  "h1": "Nexus Walker",
+  "intro": "[Your Self Introduction]",
+  "text": "(This is a sample website - you’ll be building a site like this on our Next.js tutorial.)",
+  "title": "A {{siteTitle}} error occurred on server",
+  "siteTitle": "Website Title",
+  "change-language": "Change language"
+}

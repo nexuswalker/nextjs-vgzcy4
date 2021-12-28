@@ -4,10 +4,14 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Nexus Walker";
-export const siteTitle = "Next.js Sample Website";
+import { useTranslation } from "next-i18next";
+//import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Layout({ children, home }) {
+  const { t } = useTranslation("common");
+  const name = t("h1");
+  const siteTitle = t("siteTitle");
+
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +34,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
